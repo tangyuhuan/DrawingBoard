@@ -1,0 +1,151 @@
+ol,li{
+	list-style: none;
+}
+*{
+	margin:0;
+	padding:0;
+}
+#tutorial{
+	background:rgb(255,255,255);
+	height:100vh;
+	position: fixed;
+	top:0;
+	left:0;
+}
+
+body{
+	margin:0;
+	overflow: hidden;
+}
+
+.cleanBoard{
+	position:fixed;
+	bottom:10px;
+	left:10px;
+}
+.cleanBoard svg{
+	width:2.5em;
+	height:2.5em;
+	transition: all 0.5s;
+	margin:2px 4px;
+}
+
+.saveBoard{
+	position:fixed;
+	bottom:10px;
+	right:10px;
+}
+.saveBoard svg{
+	width:2.2em;
+	height:2.2em;
+	transition: all 0.5s;
+	margin:2px 4px;
+}
+.actions{
+	position:fixed;
+	top:0;
+	left:0;
+	padding:10px;
+}
+.actions svg{
+	width:2em;
+	height:2em;
+	transition: all 0.3s;
+	margin:0 10px;
+}
+.actions svg.active{
+	fill:red;
+	transform: scale(1.2);
+}
+.colors{
+	position: fixed;
+	top:10px;
+	right:20px;
+}
+.colors> li{
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin:10px 12px;
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0,0.25);
+	transition: all 0.3;
+}
+.colors> li.active{
+	box-shadow: 1px 0 5px rgba(1,0,0,1);
+	transform: scale(1.2);
+}	
+.colors> li.black{
+	background: black;
+}
+.colors> li.yellow{
+	background: rgb(255,255,51);
+}
+.colors> li.red{
+	background: rgb(255,153,153);
+}
+.colors> li.green{
+	background: rgb(102,204,102);
+}
+.colors> li.blue{
+	background: rgb(153,204,255);
+}
+.icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+}
+.sizes{
+	position: fixed;
+	right: 10px;
+	top: 65px;
+	transition: all 0.3;
+	margin:0;
+	padding:0;
+}
+.sizes> li.active {
+	box-shadow: 1px 0 2px rgba(1,0,0,0.8);
+	transform: scale(1.2);
+}
+.sizes > .thin{
+	height: 0;
+	width: 40px;
+	border-top:4px solid black;
+	margin: 0 20px 0px 0px;
+	border-radius: 3px;
+	display: inline-block;
+}
+.sizes > .thick{
+	height: 0;
+	width: 40px;
+	margin: 0 20px 0px 0px;
+	border-top:7px solid black;
+	border-radius: 3px;
+	display: inline-block;
+}
+.sizes > .thick2{
+	height: 0;
+	width: 40px;
+	margin: 0 20px 0px 0px;
+	border-top:10px solid black;
+	border-radius: 3px;
+	display: inline-block;
+}
+.sizes > .circle{
+	width: 15px;
+	height: 15px;
+	margin: 0 20px 0px 0px;
+	border-radius: 50%;
+	border:3px solid black;
+	display: inline-block;
+}
+.sizes > .rect{
+	width:15px;
+	height:15px;
+	margin: 0 20px 0px 0px;
+	border: 3px solid black;
+	display: inline-block;
+}
+
+

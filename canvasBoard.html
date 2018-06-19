@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="//at.alicdn.com/t/font_611936_r1ahagupcu4pwrk9.js"></script>
+	<meta charset="utf-8">
+	<!--content="width=device-width页面宽度等于设备宽度，user-scalable=no用户是否可以缩放，no-->
+	<!--这条命令使得设备多大页面多大，用户不能放大和缩小-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Canvas Board</title>
+
+</head>
+<body>
+	<canvas id="tutorial" width="150" height="150"></canvas>
+	<div id="actions" class="actions">
+		<svg class="icon active" id="pen">
+	    	<use xlink:href="#icon-Pen"></use>
+		</svg>
+			<svg class="icon" id="eraser">
+	    	<use xlink:href="#icon-ico-erasertool-May"></use>
+		</svg>
+	</div>
+	<div id="cleanBoard" class="cleanBoard">
+		<svg class="icon" id="clean">
+	    	<use xlink:href="#icon-clean-o"></use>
+		</svg>
+	</div>
+	<div id="saveBoard" class="saveBoard">
+		<svg class="icon" id="save">
+	    	<use xlink:href="#icon-save-o"></use>
+		</svg>
+	</div>
+	<ol class="colors" id="colors">
+		<li class="blue" id="blue"></li>
+		<li class="green" id="green"></li>
+		<li class="red" id="red"></li>
+		<li class="yellow" id="yellow"></li>
+		<li class="black active" id="black"></li>	
+	</ol>
+	<ol class="sizes">
+		<li class="thin active" id="thin"></li>
+		<li class="thick" id="thick"></li>
+		<li class="thick2" id="thick2"></li>
+		<li class="circle" id="circle"></li>
+		<li class="rect" id="rect"></li>
+	</ol>	
+	<script src="./main.js"></script>
+</body>
+</html>
